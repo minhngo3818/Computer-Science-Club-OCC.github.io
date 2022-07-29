@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { DensityMedium, Clear } from "@mui/icons-material";
 import ClubLogo from "../asset/images/club-logo.png";
 import "./navbar.css";
-import { DensityMedium, Clear } from "@mui/icons-material";
 
 function NavigationBar() {
 	// Will refine navbar in React way
@@ -44,6 +44,7 @@ function NavigationBar() {
 					<div
 						className="nav-toggle-icons"
 						onClick={() => setIsSwitch(prev => !prev)}
+						role="link"
 					>
 						{isSwitch ? (
 							<Clear className="nav-toggle-icon" fontSize="large" />
@@ -139,20 +140,3 @@ function NavigationBar() {
 }
 
 export default NavigationBar;
-
-function Dropdown() {}
-
-const NavItemMap = [
-	{
-		title: "Home",
-		submenu: [],
-	},
-	{
-		title: "Activity",
-		submenu: [],
-	},
-	{
-		title: "Resource",
-		submenu: [],
-	},
-];

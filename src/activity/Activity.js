@@ -44,7 +44,7 @@ function Tab() {
 					}
 				>
 					<h2>Title 1</h2>
-					<img src="#" />
+					<img src="#" alt="text" />
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -58,7 +58,7 @@ function Tab() {
 					}
 				>
 					<h2>Title 2</h2>
-					<img src="#" />
+					<img src="#" alt="text" />
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
