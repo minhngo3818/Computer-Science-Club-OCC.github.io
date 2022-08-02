@@ -35,7 +35,7 @@ jobs:
         cache: 'npm'
     
     - name: Install packages
-      run: npm install
+      run: npm ci
     
     - name: Prettier
       run: npm run format:diff
