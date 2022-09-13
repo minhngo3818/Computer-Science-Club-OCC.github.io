@@ -1,0 +1,275 @@
+footer {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: baseline;
+	background-color: rgb(249, 104, 21);
+	box-sizing: border-box;
+}
+
+.break {
+	height: 25px;
+}
+
+/*middle space of footer*/
+.footer-top-content {
+	display: flex;
+	align-items: center;
+	gap: 0.1px;
+	width: 100%;
+	margin: 0;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #ff9617;
+}
+
+/*space where logo and mission located*/
+.logo-space {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1rem;
+	font-size: 0.75rem;
+	padding-bottom: 0;
+	padding-top: 5px;
+	box-sizing: border-box;
+	width: 25%;
+}
+
+.club-mission {
+	padding-right: 0.5vw;
+	padding-left: 1vw;
+	font-family: cursive;
+	margin: auto;
+	box-sizing: border-box;
+	min-width: 170px;
+}
+
+.logo-box {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 150px;
+	gap: 18px;
+}
+
+.footer-club-img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-image-radius: 50%;
+	display: inline-block;
+	margin: auto;
+}
+
+/*center of middle footer with links*/
+.center-box {
+	display: flex;
+	width: 75%;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.footer-ulist {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: flex-start;
+	width: 100%;
+	justify-content: space-between;
+}
+
+/*underline decoration*/
+footer .footer-ulist .footer-link-container-header .footer-title:after,
+footer .footer-ulist .footer-link-container .footer-sublink:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	margin-bottom: -2px;
+	height: 1px;
+	bottom: 0;
+	right: 0;
+	background-color: yellow;
+	transform-origin: bottom right;
+	transition: transform 1s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+footer .footer-ulist .footer-link-container-header .footer-title:hover::after,
+footer .footer-ulist .footer-link-container .footer-sublink:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+footer .footer-ulist .footer-link-container-header .footer-link .footer-title {
+	text-decoration: none;
+	display: inline-block;
+	color: #232023;
+	position: relative;
+	height: 15px;
+	font-size: 15px;
+	padding: 0;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+footer .footer-ulist .footer-link-container .footer-sublink {
+	text-decoration: none;
+	display: block;
+	color: #353839;
+	height: 15px;
+	font-size: 12px;
+	padding: 0;
+	position: relative;
+	margin-left: 18px;
+}
+
+/*contact button*/
+.flat-button {
+	color: #ffd700;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	text-decoration: none;
+	padding: 10px 18px;
+	border: 1px solid #ffd700;
+	animation: fadeIn 1s 1.8s backwards;
+	white-space: nowrap;
+	width: 10vw;
+	margin-right: 1vw;
+}
+
+.flat-button:hover {
+	background: #ffd700;
+	color: #333;
+}
+
+/* icons next to main links*/
+.home-icon {
+	color: black;
+	margin-left: -8px;
+	padding-right: 2px;
+}
+
+.event-icon {
+	color: black;
+	margin-left: -8px;
+	padding-right: 2px;
+}
+
+.resources-icon {
+	color: black;
+	margin-left: -8px;
+	padding-right: 2px;
+}
+
+.about-icon {
+	color: black;
+	margin-left: -8px;
+	padding-right: 2px;
+}
+
+#resources-links {
+	min-width: 110px;
+}
+
+/*bottom of footer*/
+.footer-bottom-content {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+	background-color: #ff8d00;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+}
+
+.footer-bottom-content p {
+	color: black;
+	font-size: 10px;
+}
+
+#map-policy-text {
+	position: absolute;
+	right: 5px;
+}
+
+/*smaller screens*/
+@media only screen and (max-width: 768px) {
+	.footer-top-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.flat-button {
+		margin-bottom: -100px;
+	}
+
+	.center-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		gap: 5px;
+	}
+
+	.footer-bottom-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo-space {
+		width: 50%;
+		padding: 0;
+	}
+	.footer-club-img {
+		margin: auto;
+	}
+
+	.footer-link-container-header {
+		margin: auto;
+	}
+
+	.footer-link-container {
+		margin: auto;
+	}
+
+	.footer-sublink {
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.logo-box {
+		margin: auto;
+	}
+
+	.club-mission {
+		margin: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 2.8vw;
+		padding-right: 0;
+		box-sizing: border-box;
+		min-width: 0;
+	}
+}
