@@ -70,21 +70,21 @@ function NavigationBar() {
 									<Link
 										className="dropdown-link"
 										to="/homepage"
-										state={{ option: 1 }}
+										state={{ section: 1 }}
 									>
 										&gt; About
 									</Link>
 									<Link
 										className="dropdown-link"
 										to="/homepage"
-										state={{ option: 2 }}
+										state={{ section: 2 }}
 									>
 										&gt; News
 									</Link>
 									<Link
 										className="dropdown-link"
 										to="/homepage"
-										state={{ option: 3 }}
+										state={{ section: 3 }}
 									>
 										&gt; Contact Us
 									</Link>

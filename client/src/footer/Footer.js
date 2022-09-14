@@ -36,7 +36,7 @@ function Footer() {
 						</li>
 						<li className="footer-link-container">
 							<Link to="/homepage" className="footer-sublink">
-								<span className="sublink-name">Opportunity</span>
+								<span className="sublink-name">News</span>
 							</Link>
 						</li>
 					</ul>
@@ -105,9 +105,13 @@ function Footer() {
 							</Link>
 						</li>
 					</ul>
-					<ul className="footer-ulist">
+					<ul className="footer-ulist" id="about-box">
 						<li className="footer-link-container-header">
-							<Link to="/homepage" className="footer-link">
+							<Link
+								to="/homepage"
+								className="footer-link"
+								state={{ section: 1 }}
+							>
 								<span>
 									<RiBracesFill className="about-icon" />
 								</span>
@@ -119,7 +123,11 @@ function Footer() {
 					</ul>
 				</div>
 				<div className="contact-button">
-					<Link to="/contact" className="flat-button">
+					<Link
+						to="/homepage"
+						className="flat-contact-button"
+						state={{ section: 3 }}
+					>
 						CONTACT US
 					</Link>
 				</div>

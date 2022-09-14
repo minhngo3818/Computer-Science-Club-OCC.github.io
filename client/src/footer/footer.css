@@ -41,12 +41,11 @@ footer {
 }
 
 .club-mission {
-	padding-right: 0.5vw;
-	padding-left: 1vw;
 	font-family: cursive;
 	margin: auto;
-	box-sizing: border-box;
-	min-width: 170px;
+	min-width: 150px;
+	max-width: 150px;
+	text-align: center;
 }
 
 .logo-box {
@@ -55,6 +54,7 @@ footer {
 	width: 50%;
 	min-width: 150px;
 	gap: 18px;
+	margin-bottom: 20px;
 }
 
 .footer-club-img {
@@ -79,7 +79,7 @@ footer {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 9px;
 	align-items: flex-start;
 	width: 100%;
 	justify-content: space-between;
@@ -115,6 +115,7 @@ footer .footer-ulist .footer-link-container-header .footer-link .footer-title {
 	height: 15px;
 	font-size: 15px;
 	padding: 0;
+	box-sizing: border-box;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
 	margin-inline-start: 0px;
@@ -129,11 +130,11 @@ footer .footer-ulist .footer-link-container .footer-sublink {
 	font-size: 12px;
 	padding: 0;
 	position: relative;
-	margin-left: 18px;
+	margin-left: 20px;
 }
 
 /*contact button*/
-.flat-button {
+.flat-contact-button {
 	color: #ffd700;
 	font-size: 13px;
 	font-weight: 400;
@@ -148,34 +149,18 @@ footer .footer-ulist .footer-link-container .footer-sublink {
 	margin-right: 1vw;
 }
 
-.flat-button:hover {
+.flat-contact-button:hover {
 	background: #ffd700;
 	color: #333;
 }
 
 /* icons next to main links*/
-.home-icon {
-	color: black;
-	margin-left: -8px;
-	padding-right: 2px;
-}
-
-.event-icon {
-	color: black;
-	margin-left: -8px;
-	padding-right: 2px;
-}
-
-.resources-icon {
-	color: black;
-	margin-left: -8px;
-	padding-right: 2px;
-}
-
+.home-icon,
+.event-icon,
+.resources-icon,
 .about-icon {
 	color: black;
-	margin-left: -8px;
-	padding-right: 2px;
+	padding-right: 5px;
 }
 
 #resources-links {
@@ -204,6 +189,9 @@ footer .footer-ulist .footer-link-container .footer-sublink {
 	right: 5px;
 }
 
+#about-box {
+	width: 70%;
+}
 /*smaller screens*/
 @media only screen and (max-width: 768px) {
 	.footer-top-content {
@@ -216,7 +204,7 @@ footer .footer-ulist .footer-link-container .footer-sublink {
 		padding-bottom: 20px;
 	}
 
-	.flat-button {
+	.flat-contact-button {
 		margin-bottom: -100px;
 	}
 
@@ -254,11 +242,6 @@ footer .footer-ulist .footer-link-container .footer-sublink {
 		margin: auto;
 	}
 
-	.footer-sublink {
-		padding: 0;
-		margin-left: 0;
-	}
-
 	.logo-box {
 		margin: auto;
 	}
@@ -267,9 +250,6 @@ footer .footer-ulist .footer-link-container .footer-sublink {
 		margin: auto;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		padding-left: 2.8vw;
-		padding-right: 0;
 		box-sizing: border-box;
-		min-width: 0;
 	}
 }

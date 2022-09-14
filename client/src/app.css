@@ -41,3 +41,10 @@ a {
 #active {
 	background-color: #b26910;
 }
+
+.footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

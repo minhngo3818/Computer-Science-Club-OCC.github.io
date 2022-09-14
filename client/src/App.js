@@ -5,6 +5,7 @@ import Events from "./pages/events/Events";
 import Projects from "./pages/projects/Projects";
 import Resources from "./pages/resources/Resources";
 import NavigationBar from "./components/navbar/NavigationBar";
+import Footer from "./footer/Footer";
 
 function App() {
 	return (
@@ -18,7 +19,7 @@ function App() {
 				<Route path="/resources" element={<Resources />} />
 				<Route path="*" element={<Navigate to="/homepage" replace />} />
 			</Routes>
-			{/* Add Footer */}
+			<Footer className="footer" />
 		</BrowserRouter>
 	);
 }
