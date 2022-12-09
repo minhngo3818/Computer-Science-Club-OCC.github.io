@@ -1,6 +1,8 @@
 const mongoose = require("mongoose")
 const { Schema } = mongoose
 
+const projectStatus = ["Initiated", "On Going", "Completed", "Canceled"]
+
 const projectSchema = new Schema({
     title: {
         type: String,
@@ -8,6 +10,8 @@ const projectSchema = new Schema({
     },
     status: {
         type: String,
+        enum: projectStatus,
+        immutable: true,
         required: true,
     },
     description: {
@@ -33,4 +37,7 @@ const projectSchema = new Schema({
     },
 })
 
-module.exports = mongoose.model("projects", projectSchema)
+module.exports = {
+    ProjectsModel: mongoose.model("projects", projectSchema),
+    projectSchema,
+}

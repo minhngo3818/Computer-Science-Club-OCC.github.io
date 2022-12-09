@@ -27,4 +27,7 @@ const orgSchema = new Schema({
     },
 })
 
-module.exports = mongoose.model("organizations", orgSchema)
+module.exports = {
+    OrgModel: mongoose.model("organizations", orgSchema),
+    orgSchema,
+}

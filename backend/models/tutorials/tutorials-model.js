@@ -30,4 +30,7 @@ const tutorialsSchema = new Schema({
     },
 })
 
-module.exports = mongoose.model("tutorials", tutorialsSchema)
+module.exports = {
+    TutorialsModel: mongoose.model("tutorials", tutorialsSchema),
+    tutorialsSchema,
+}
